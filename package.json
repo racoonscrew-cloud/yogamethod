@@ -1,0 +1,21 @@
+{
+  "name": "yogamethod-course-bot",
+  "version": "0.1.0",
+  "description": "Telegram-бот для студентов курса инструкторов дыхательных техник: отвечает на вопросы по структуре, контенту курса и подготовке к экзамену",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "sync:getcourse": "node src/getcourse/sync.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.0",
+    "dotenv": "^16.4.5",
+    "gray-matter": "^4.0.3",
+    "grammy": "^1.30.0",
+    "minisearch": "^7.1.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
